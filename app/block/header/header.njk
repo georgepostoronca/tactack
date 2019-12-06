@@ -1,8 +1,34 @@
 <header class="header">
     {% include "menu/menu.njk" %}
-    <div class="header__wrap">
 
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsa ex nesciunt autem, deserunt accusamus ea quod quia est provident blanditiis cumque cupiditate possimus quas, quibusdam dolorem repudiandae, sint sed?</p>
+      <div class="headslider">
+        {% for item in range(0, 4) %}
+        <div class="headslider__item" style="background-image: url(img/index-back.jpg)">
+          <div class="container">
+            <h1>
+              <b>Nature,</b> <br>
+              For everyone.
+            </h1>
 
-    </div>
+            <h3>Explore <b>Pakistan</b> with us</h3>
+
+            <a href="#" class="btn">
+              <span>more about us</span>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="headslider-dots">
+      </div>
+
+      <div class="headslider-arrow container">
+        <div class="headslider__arrow-prev">
+          {{ M.svg("go-back-left-arrow") }}
+        </div>
+        <div class="headslider__arrow-next">
+          {{ M.svg("right-arrow-forward") }}
+        </div>
+      </div>
 </header>

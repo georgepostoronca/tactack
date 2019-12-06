@@ -9,7 +9,17 @@
     --color-footer-bottom: #15161c;
 
 
+    // Button
+    --color-btn: var(--color-yellow);
+    --color-btn-text-hover: var(--color-white);
+
+
     // Index Header
-    --header-color-title: #ffffff;
-    --header-color-slide-dots: #ffffff;
+    --header-color-title: var(--color-white);
+    --header-color-slide-dots: var(--color-white);
+    --header-color-nav: var(--color-white);
+    --header-color-nav-hover: var(--color-blue);
+    --header-color-nav-text: var(--color-silver);
+    --header-color-nav-text-hover: var(--color-white);
+    --header-color-doots: var(--color-white);
 }
