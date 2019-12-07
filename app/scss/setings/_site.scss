@@ -67,6 +67,29 @@ h3 {
         font-weight: 900;
     }
 
+    &.center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 32px;
+        padding-left: 0px;
+
+        em {
+            color: #ffcf11;
+        }
+
+        &:before, &:after {
+            content:"";
+            display: block;
+            position: static;
+            width: 46px;
+            height: 1px;
+            background-color: rgba(#fff, .3);
+            margin: 0px 25px;
+        }
+    }
+
     &:after {
         content: "";
         width: 75px;
