@@ -1,0 +1,120 @@
+.mainsection {
+    background: var(--mainsection-bg) center 207px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__wrap {
+        padding-top: 48px;
+
+        h2 {
+            margin-bottom: 39px;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-item {
+            width: 455px;
+            margin-bottom: 41px;
+
+            b {
+                font-size: 16px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+                display: block;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.experience {
+    margin-top: 289px;
+    padding-bottom: 71px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    > p {
+        font-size: 17px;
+        line-height: 32px;
+        width: 60%;
+    }
+
+    &__grid {
+        // width: 100%;
+        width: 90.9%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 41px;
+
+        &-item {
+            width: calc(33.33333% - 26.6666px);
+            height: 539px;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            padding-bottom: 26px;
+            padding-left: 28px;
+            padding-right: 7%;
+
+            &:nth-child(1) {
+                margin-top: 89px;
+            }
+
+            &:nth-child(3) {
+                position: relative;
+                top: -124px;
+            }
+
+            img {
+                width: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 0;
+                
+                @supports (object-fit: cover) {
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+
+            b {
+                font-weight: bold;
+                position: relative;
+                z-index: 1;
+                display: block;
+                color: var(--mainsection-iitem-text-color);
+
+                font-size: 17px;
+                font-weight: 900;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+            
+            p {
+                position: relative;
+                z-index: 1;
+                color: var(--mainsection-iitem-text-color);
+                font-size: 16px;
+                font-weight: 200;
+                line-height: 26px;
+                letter-spacing: 0.3px;
+            }
+        }
+    }
+}

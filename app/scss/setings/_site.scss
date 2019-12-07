@@ -27,6 +27,11 @@ html, body {
     }
 }
 
+b {
+    font-weight: bold;
+}
+
+
 h1 {
     font-size: 99px;
     font-weight: 100;
@@ -37,6 +42,17 @@ h1 {
         font-size: 118px;
         font-weight: 900;
         letter-spacing: -0.3px;
+    }
+}
+
+h2 {
+    font-size: 54px;
+    font-weight: 200;
+    line-height: 63px;
+    letter-spacing: 1px;
+
+    b {
+        font-weight: 900;
     }
 }
 
