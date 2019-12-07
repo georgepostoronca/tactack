@@ -3,7 +3,9 @@
     --color-white: #ffffff;
     --color-yellow: #ffcf11;
     --color-blue: #0882e9;
+    --color-blue-dark: #2252bc;
     --color-silver: #7f7f7f;
+    --color-silver-light: #ebecef;
 
     --color-footer-top: #24252d;
     --color-footer-bottom: #15161c;
@@ -34,4 +36,11 @@
     --funinfo-color-svg: var(--color-white);
     --funinfo-color-text: var(--color-white);
     --funinfo-color-accent: var(--color-yellow);
+
+    // aboutus
+    --aboutus-comment-border: var(--color-silver-light);
+    --aboutus-comment-date: var(--color-silver);
+    --aboutus-imgblock-color-text: var(--color-white);
+    --aboutus-imgblock-left-bg: url("../img/about-1.jpg");
+    --aboutus-imgblock-right-bg: url("../img/about-2.jpg");
 }

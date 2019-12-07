@@ -110,6 +110,7 @@ h3 {
     display: block;
     outline: none;
     transition: .2s;
+    cursor: pointer;
     
     &:hover {
         background-color: var(--color-btn, #ffcf11);
@@ -127,5 +128,22 @@ h3 {
         text-align: center;
         padding: 20px 10px;
         display: block;
+        white-space: nowrap;
+    }
+}
+
+.quote {
+    width: 35px;
+    height: 35px;
+    color: #0882e9;
+    background: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        fill: #fff;
+        width: 14px;
+        height: 10px;
     }
 }
