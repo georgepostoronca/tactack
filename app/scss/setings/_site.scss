@@ -136,7 +136,7 @@ h3 {
     width: 35px;
     height: 35px;
     color: #0882e9;
-    background: var(--color-blue);
+    background: var(--color-blue-dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,4 +146,14 @@ h3 {
         width: 14px;
         height: 10px;
     }
+}
+
+.label {
+    background-color: #0882e9;
+    background-color: var(--color-blue);
+    font-size: 14px;
+    color: #fff;
+    color: var(--color-white);
+    display: inline-block;
+    padding: 11px 16px;
 }

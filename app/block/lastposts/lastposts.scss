@@ -1,0 +1,125 @@
+.lastposts {
+    &__wrap {
+        padding-top: 63px;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__grid {
+        display: flex;
+        margin-top: 23px;
+        justify-content: space-between;
+
+        .article-max {
+             width: calc(50% - 15px);
+            }
+            
+        .article-min {
+            width: calc(25% - 20px);
+        }
+    }
+}
+
+.article-max {
+    position: relative;
+    height: 336px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-left: 37px;
+    padding-top: 34px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+
+    color: #fff;
+    color: var(--lastposts-article-max-color-text);
+    
+    img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 0;
+        
+        @supports(object-fit: cover) {
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    .label {
+        z-index: 2;
+        position: absolute;
+        left: 37px;
+        top: 34px;
+    }
+
+    h4 {
+        font-size: 28px;
+        position: relative;
+        z-index: 2;
+        font-weight: 900;
+        margin-bottom: 9px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 27px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.article-min {
+    position: relative;
+    height: 336px;
+
+    picture {
+        display: block;
+        height: 231px;
+        overflow: hidden;
+    }
+    
+    img {
+        width: 100%;
+        
+        @supports(object-fit: cover) {
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-bottom: 4px;
+
+        height: 55px;
+        overflow: hidden;
+    }
+
+    span {
+        color: var(--color-silver);
+        font-size: 13px;
+    }
+
+    &__content {
+        border: 1px solid var(--color-silver-light);
+        border-top: 0px;
+
+        padding-top: 14px;
+        padding-left: 24px;
+        padding-right: 20px;
+        padding-bottom: 16px;
+    }
+
+}

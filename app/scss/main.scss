@@ -1,11 +1,16 @@
-// Lib
+ // Lib
 // @import ".././../node_modules/perfect-scrollbar/css/perfect-scrollbar.css";
 // @import ".././../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 @import ".././../node_modules/slick-carousel/slick/slick.css";
 // @import ".././../node_modules/slick-carousel/slick/slick-theme.css";
 
 // cssGlobbingBegin
-@import "setings/**/*.scss";
+// @import "setings/**/*.scss";
+@import "setings/fonts";
+@import "setings/reset";
+@import "setings/gset";
+@import "setings/site";
+@import "setings/sprite";
 // cssGlobbingEnd
 
 // cssGlobbingBegin
