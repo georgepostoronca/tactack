@@ -1,9 +1,12 @@
 .ourproj {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     &__half {
         width: 50%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
 
         img {
             // max-width: 100%;
@@ -20,6 +23,7 @@
 
         &.left {
             overflow: hidden;
+            min-height: 520px;
 
             @media(max-width: 768px) {
                 display: none;
@@ -30,8 +34,8 @@
             width: 645px;
             padding-left: 60px;
 
-            padding-top: 30px;
-            padding-bottom: 30px;
+            padding-top: 60px;
+            padding-bottom: 70px;
 
             @media(max-width: 768px) {
                 padding-left: 20px;

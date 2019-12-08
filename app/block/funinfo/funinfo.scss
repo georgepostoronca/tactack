@@ -4,9 +4,21 @@
     color: var(--funinfo-color-text);
     padding-bottom: 75px;
 
+    @media(max-width: 992px) {
+        padding-bottom: 50px;
+    }
+
+    @media(max-width: 560px) {
+        padding-bottom: 20px;
+    }
+
     &__wrap {
         padding-top: 48px;
         text-align: center;
+
+        @media(max-width: 768px) {
+            padding-top: 30px;
+        }
 
         h2 {
             margin-bottom: 25px;
@@ -27,6 +39,19 @@
         justify-content: center;
         margin-bottom: 64px;
 
+        @media(max-width: 992px) {
+            margin-bottom: 20px;
+        }
+
+        @media(max-width: 560px) {
+            // flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 480px) {
+            flex-wrap: wrap;
+        }
+
         &-item {
             width: 272px;
             text-align: left;
@@ -36,6 +61,20 @@
             padding-bottom: 18px;
             padding-right: 10px;
 
+            @media(max-width: 992px) {
+                padding-left: 30px;
+                width: 190px;
+            }
+
+            @media(max-width: 560px) {
+                padding: 20px;
+            }
+
+            @media(max-width: 480px) {
+                width: 100%;
+                text-align: center;
+            }
+
             em {
                 color: #ffcf11;
                 font-size: 54px;
@@ -44,12 +83,28 @@
                 display: block;
                 margin-bottom: 11px;
                 letter-spacing: 0.8px;
+
+                @media(max-width: 992px) {
+                    font-size: 40px;
+                }
+
+                @media(max-width: 650px) {
+                    font-size: 30px;
+                }
+
+                @media(max-width: 480px) {
+
+                }
             }
 
             &:nth-child(2) {
                 border-left: 1px solid rgba(#fff, .1);
                 border-right: 1px solid rgba(#fff, .1);
                 letter-spacing: 1.4px;
+
+                @media(max-width: 480px) {
+                    border: 0px;
+                }
             }
         }
     }
@@ -57,6 +112,12 @@
     &__grid {
         display: flex;
         justify-content: space-between;
+
+
+        @media(max-width: 992px) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
         &-item {
             width: 13.1%;
@@ -71,6 +132,11 @@
 
             padding-top: 18px;
             padding-bottom: 13px;
+
+            @media(max-width: 992px) {
+                width: 143px;
+                margin: 5px 5px;
+            }
 
             svg {
                 width: 40px;
