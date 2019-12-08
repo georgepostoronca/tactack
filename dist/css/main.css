@@ -2740,10 +2740,23 @@ a {
     .ourproj__half.right {
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 0px;
     }
 
     .ourproj__half.right h2 {
         margin-left: 0px;
+    }
+
+    .ourproj__half.right h4 {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .ourproj__half.right p {
+        font-size: 14px;
+        line-height: 26px;
     }
 
     .partenter {
