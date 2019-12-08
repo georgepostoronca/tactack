@@ -51,6 +51,16 @@ h2 {
     line-height: 63px;
     letter-spacing: 1px;
 
+    @media(max-width: 1024px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    @media(max-width: 768px) {
+        font-size: 30px;
+        left: 40px;
+    }
+
     b {
         font-weight: 900;
     }
