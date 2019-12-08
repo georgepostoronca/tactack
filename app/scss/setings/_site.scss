@@ -23,7 +23,7 @@ html, body {
 
     @media(max-width: 560px) {
         padding-left: 15px;
-        padding-bottom: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -58,7 +58,7 @@ h2 {
 
     @media(max-width: 768px) {
         font-size: 30px;
-        left: 40px;
+        line-height: 40px;
     }
 
     b {

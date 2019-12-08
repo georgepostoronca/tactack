@@ -1,0 +1,95 @@
+.discount {
+    background: url("../img/discount-bg.jpg");
+    background: var(--discount-bg) center center no-repeat;
+    background-size: cover;
+
+    
+    &__wrap {
+        padding-top: 123px;
+        padding-bottom: 98px;
+        position: relative;
+
+        @media(max-width: 1024px) {
+            padding-top: 80px;
+            padding-bottom: 60px;
+        }
+
+        @media(max-width: 650px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        @media(max-width: 480px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &:after {
+            content: "";
+            width: 510px;
+            height: 595px;
+            background: url("../img/discount-dec.png") center bottom no-repeat;
+            background-size: contain;
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+            display: block;
+            z-index: 0;
+            
+            @media(max-width: 1024px) {
+                width: 410px;
+                height: 495px;
+            }
+
+            @media(max-width: 768px) {
+                width: 310px;
+                height: 395px;
+            }
+
+            @media(max-width: 650px) {
+                display: none;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        
+        @media(min-width: 1025px) {
+            font-size: 58px;
+            line-height: 76px;
+        }
+
+        @media(max-width: 650px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        margin-bottom: 40px;
+
+        position: relative;
+        z-index: 1;
+
+        @media(max-width: 650px) {
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+
+        em {
+            color: #0882e9;
+            color: var(--color-blue)
+        }
+    }
+
+    .btn {
+        position: relative;
+        z-index: 1;
+    }
+}
