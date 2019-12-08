@@ -24,5 +24,3 @@ node_modules
 PSD
 
 app/src
-dist
-dist/**/*

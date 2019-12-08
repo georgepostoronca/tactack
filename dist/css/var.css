@@ -1,0 +1,38 @@
+:root {
+    --color-black: #060a18;
+    --color-white: #ffffff;
+    --color-yellow: #ffcf11;
+    --color-blue: #0882e9;
+    --color-blue-dark: #2252bc;
+    --color-silver: #7f7f7f;
+    --color-silver-light: #ebecef;
+    --footer-color-top: #24252d;
+    --footer-color-bot: #15161c;
+    --footer-text-color: var(--color-white);
+    --color-btn: var(--color-yellow);
+    --color-btn-text-hover: var(--color-white);
+    --header-color-title: var(--color-white);
+    --header-color-slide-dots: var(--color-white);
+    --header-color-nav: var(--color-white);
+    --header-color-nav-hover: var(--color-blue);
+    --header-color-nav-text: var(--color-silver);
+    --header-color-nav-text-hover: var(--color-white);
+    --header-color-doots: var(--color-white);
+    --mainsection-bg: url("../img/mainsection-bg.jpg");
+    --mainsection-iitem-text-color: var(--color-white);
+    --funinfo-bg: url("../img/funinfo-bg.jpg");
+    --funinfo-color-item-bg: var(--color-white);
+    --funinfo-color-svg: var(--color-white);
+    --funinfo-color-text: var(--color-white);
+    --funinfo-color-accent: var(--color-yellow);
+    --aboutus-comment-border: var(--color-silver-light);
+    --aboutus-comment-date: var(--color-silver);
+    --aboutus-imgblock-color-text: var(--color-white);
+    --aboutus-imgblock-left-bg: url("../img/about-1.jpg");
+    --aboutus-imgblock-right-bg: url("../img/about-2.jpg");
+    --partenter-dots-bg: var(--color-blue-dark);
+    --cofounders-bg: url("../img/cofound-bg.jpg");
+    --discount-bg: url("../img/discount-bg.jpg");
+}
+
+/*# sourceMappingURL=var.css.map */
