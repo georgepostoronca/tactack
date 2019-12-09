@@ -1,6 +1,43 @@
 .header {
     min-height: 100vh;
     background-color: var(--color-blue, #0882e9);
+
+    &--min {
+        min-height: auto;
+        background-size: cover;
+        background-position: center center;
+
+        .header__wrap {
+            padding-top: 122px;
+            color: var(--color-white);
+
+            @media(max-width: 768px) {
+                padding-top: 95px;
+            }
+
+            @media(max-width: 560px) {
+                padding-top: 60px;
+            }
+
+            .header-min {
+                padding-top: 99px;
+                padding-bottom: 124px;
+
+                @media(max-width: 992px) {
+                    padding-top: 30px;
+                    padding-bottom: 50px;
+                }
+
+                h1 {
+                    margin-bottom: 29px;
+
+                    @media(max-width: 992px) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
     
     // display: flex;
     // flex-direction: column;

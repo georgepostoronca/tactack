@@ -1,0 +1,314 @@
+.article {
+    
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 43px;
+
+        @media(max-width: 768px) {
+            padding-top: 20px;
+        }
+
+        @media(max-width: 767px) {
+            display: block;
+        }
+    }
+    
+    &__title {
+        width: 100%;
+        h2 {
+            margin-bottom: 23px;
+        }
+    }
+
+    &__text {
+        flex: 1;
+        // padding-top: 44px;
+    }
+
+    &__aside {
+        width: 315px;
+        padding-left: 30px;
+        // padding-top: 129px;
+
+        @media(max-width: 1024px) {
+            // padding-top: 116px;
+        }
+
+        @media(max-width: 768px) {
+            padding-left: 15px;
+            width: 250px;
+        }
+
+        @media(max-width: 767px) {
+            width: 100%;
+            padding-left: 0px;
+            margin-bottom: 30px;
+
+
+            @media(min-width: 560px) {
+                display: flex;
+                justify-content: space-between;
+    
+                .recentpost, .categories {
+                    width: calc(50% - 10px);
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+
+    &__control {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 35px;
+        margin-bottom: 53px;
+
+        @media(max-width: 768px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+    }
+
+    &__prev, &__next {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        svg {
+            width: 12px;
+            height: 13px;
+            fill: var(--color-blue);
+        }
+
+        span {
+            color: var(--color-blue);
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    &__prev {
+        span {
+            margin-left: 15px;
+        }
+    }
+
+    &__next {
+        span {
+            margin-right: 15px;
+        }
+    }
+}
+
+article {
+    h2 {
+        margin-bottom: 23px;
+
+        @media(max-width: 768px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        margin-bottom: 27px;
+
+        @media(max-width: 768px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 29px;
+        margin-bottom: 30px;
+
+        @media(max-width: 768px) {
+            line-height: 22px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .time {
+        margin-right: 27px;
+
+        @media(max-width: 768px) {
+            margin-right: 15px;
+        }
+    }
+
+    .label-min {
+        margin-bottom: 26px;
+
+        @media(max-width: 768px) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.recentpost {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f4f4f5;
+    background-color: var(--recentpost-bg);
+    padding-top: 24px;
+    padding-bottom: 37px;
+    margin-bottom: 29px;
+
+    @media(max-width: 768px) {
+        padding: 20px;
+        padding-top: 15px;
+    }
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 17px;
+
+        @media(max-width: 768px) {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
+
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        picture {
+            display: block;
+            width: 60px;
+            height: 60px;
+        }
+
+        &-img {
+            
+        }
+
+        &-info {
+            padding-left: 14px;
+            // padding-top: 10px;
+
+            em {    
+                color: #7f7f7f;
+                color: var(--recentpost-color-time);
+                font-size: 13px;
+                display: inline-block;
+                margin-bottom: 5px;
+
+                @media(max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+
+            a {
+                color: #2252bc;
+                color: var(--recentpost-color-link);
+                text-decoration: underline;
+                font-size: 14px;
+                font-weight: bold;
+                display: block;
+                line-height: 20px;
+
+                @media(max-width: 768px) {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.categories {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f4f4f5;
+    background-color: var(--recentpost-bg);
+    padding-top: 24px;
+    padding-bottom: 32px;
+
+    @media(max-width: 768px) {
+        padding: 20px;
+        padding-top: 15px;
+    }
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 24px;
+
+        @media(max-width: 768px) {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    }
+
+    a {
+        font-size: 15px;
+        text-decoration: underline;
+
+        @media(max-width: 768px) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        li {
+            margin-bottom: 24px;
+
+            @media(max-width: 768px) {
+                margin-bottom: 15px;
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.label-min {
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--color-blue);
+        margin-right: 10px;
+    }
+
+    span, a {
+        font-size: 13px;
+        color: var(--color-silver);
+    }   
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

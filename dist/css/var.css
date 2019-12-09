@@ -33,6 +33,10 @@
     --partenter-dots-bg: var(--color-blue-dark);
     --cofounders-bg: url("../img/cofound-bg.jpg");
     --discount-bg: url("../img/discount-bg.jpg");
+    --breadcrumbs-border-color: var(--color-silver-light);
+    --recentpost-bg: #f4f4f5;
+    --recentpost-color-time: var(--color-silver);
+    --recentpost-color-link: var(--color-blue-dark);
 }
 
 /*# sourceMappingURL=var.css.map */

@@ -897,6 +897,262 @@ a {
     padding-right: 50px;
 }
 
+.article__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 43px;
+}
+
+.article__title {
+    width: 100%;
+}
+
+.article__title h2 {
+    margin-bottom: 23px;
+}
+
+.article__text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.article__aside {
+    width: 315px;
+    padding-left: 30px;
+}
+
+.article__control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 53px;
+}
+
+.article__prev, .article__next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.article__prev:hover span, .article__next:hover span {
+    text-decoration: underline;
+}
+
+.article__prev svg, .article__next svg {
+    width: 12px;
+    height: 13px;
+    fill: var(--color-blue);
+}
+
+.article__prev span, .article__next span {
+    color: var(--color-blue);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.article__prev span {
+    margin-left: 15px;
+}
+
+.article__next span {
+    margin-right: 15px;
+}
+
+article h2 {
+    margin-bottom: 23px;
+}
+
+article img {
+    max-width: 100%;
+    margin-bottom: 27px;
+}
+
+article p {
+    font-size: 15px;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+
+article .time {
+    margin-right: 27px;
+}
+
+article .label-min {
+    margin-bottom: 26px;
+}
+
+.recentpost {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f4f4f5;
+    background-color: var(--recentpost-bg);
+    padding-top: 24px;
+    padding-bottom: 37px;
+    margin-bottom: 29px;
+}
+
+.recentpost h4 {
+    font-size: 22px;
+    margin-bottom: 17px;
+}
+
+.recentpost__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.recentpost__item:last-of-type {
+    margin-bottom: 0px;
+}
+
+.recentpost__item picture {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.recentpost__item-info {
+    padding-left: 14px;
+}
+
+.recentpost__item-info em {
+    color: #7f7f7f;
+    color: var(--recentpost-color-time);
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.recentpost__item-info a {
+    color: #2252bc;
+    color: var(--recentpost-color-link);
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    line-height: 20px;
+}
+
+.recentpost__item-info a:hover {
+    text-decoration: none;
+}
+
+.categories {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f4f4f5;
+    background-color: var(--recentpost-bg);
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.categories h4 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.categories a {
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.categories a:hover {
+    text-decoration: none;
+}
+
+.categories ul li {
+    margin-bottom: 24px;
+}
+
+.categories ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.label-min {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.label-min svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-blue);
+    margin-right: 10px;
+}
+
+.label-min span, .label-min a {
+    font-size: 13px;
+    color: var(--color-silver);
+}
+
+.label-min a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-top: 23px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ebecef;
+    border-bottom: 1px solid var(--breadcrumbs-border-color);
+}
+
+.breadcrumbs ul a {
+    letter-spacing: 0.2px;
+}
+
+.breadcrumbs ul a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs ul a:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: url("../ico/right-arrow-forward.svg") center center no-repeat;
+    background-size: contain;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    opacity: .3;
+    margin: 0px 10px;
+}
+
 .cofounders {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1429,6 +1685,26 @@ a {
 .header {
     min-height: 100vh;
     background-color: var(--color-blue, #0882e9);
+}
+
+.header--min {
+    min-height: auto;
+    background-size: cover;
+    background-position: center center;
+}
+
+.header--min .header__wrap {
+    padding-top: 122px;
+    color: var(--color-white);
+}
+
+.header--min .header__wrap .header-min {
+    padding-top: 99px;
+    padding-bottom: 124px;
+}
+
+.header--min .header__wrap .header-min h1 {
+    margin-bottom: 29px;
 }
 
 .headslider {
@@ -2449,6 +2725,15 @@ a {
         margin: 5px 5px;
     }
 
+    .header--min .header__wrap .header-min {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .header--min .header__wrap .header-min h1 {
+        margin-bottom: 15px;
+    }
+
     .lastposts__wrap {
         padding-top: 30px;
     }
@@ -2568,6 +2853,79 @@ a {
         margin-bottom: 0px;
     }
 
+    .article__wrap {
+        padding-top: 20px;
+    }
+
+    .article__aside {
+        padding-left: 15px;
+        width: 250px;
+    }
+
+    .article__control {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    article h2 {
+        margin-bottom: 15px;
+    }
+
+    article img {
+        margin-bottom: 15px;
+    }
+
+    article p {
+        line-height: 22px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    article .time {
+        margin-right: 15px;
+    }
+
+    article .label-min {
+        margin-bottom: 15px;
+    }
+
+    .recentpost {
+        padding: 20px;
+        padding-top: 15px;
+    }
+
+    .recentpost h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .recentpost__item-info em {
+        font-size: 12px;
+    }
+
+    .recentpost__item-info a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .categories {
+        padding: 20px;
+        padding-top: 15px;
+    }
+
+    .categories h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .categories a {
+        font-size: 14px;
+    }
+
+    .categories ul li {
+        margin-bottom: 15px;
+    }
+
     .cofounders__info h2 {
         margin-bottom: 20px;
     }
@@ -2592,6 +2950,10 @@ a {
 
     .funinfo__wrap {
         padding-top: 30px;
+    }
+
+    .header--min .header__wrap {
+        padding-top: 95px;
     }
 
     .headslider-dots {
@@ -2773,6 +3135,34 @@ a {
     }
 }
 
+@media (max-width: 767px) and (min-width: 560px) {
+    .article__aside {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .article__aside .recentpost, .article__aside .categories {
+        width: calc(50% - 10px);
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .article__wrap {
+        display: block;
+    }
+
+    .article__aside {
+        width: 100%;
+        padding-left: 0px;
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 650px) {
     .discount__wrap {
         padding-top: 40px;
@@ -2927,6 +3317,10 @@ a {
 
     .funinfo__num-item {
         padding: 20px;
+    }
+
+    .header--min .header__wrap {
+        padding-top: 60px;
     }
 
     .headslider__item {
