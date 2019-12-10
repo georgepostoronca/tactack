@@ -1,0 +1,22 @@
+{# Include #}
+{% extends "inc/main.njk" %}
+
+{# Title #}
+{% set title = "Special" %}
+
+{# Dop Class #}
+{# {% set htmlClass = "htmlClass" %}
+{% set bodyClass = "bodyClass" %} #}
+
+
+{% block content %}
+    {% set img = "img/education-page-bg.jpg" %}
+    {% set title = "<b>Special</b>" %}
+    {% set h3 = "For the adventurous ones that love to live life and experience magical moments amongst beautiful nature!" %}
+
+    {% include "header-min/header-min.njk" %}
+    {% include "breadcrumbs/breadcrumbs.njk" %}
+    {% include "b-education/b-education.njk" %}
+    {% include "discount/discount.njk" %}
+    {% include "footer/footer.njk" %}
+{% endblock %}

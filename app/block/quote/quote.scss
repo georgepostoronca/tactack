@@ -1,0 +1,87 @@
+.blockquote {
+    text-align: center;
+    background: url("../ico/logo-silver.png") center center no-repeat;
+    background-size: 320px 320px;
+    background-position-y: 21px;
+    position: relative;
+
+    padding-top: 43px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 109px;
+    
+    @media(max-width: 992px) {
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-size: auto 85%;
+        margin-bottom: 30px;
+    }
+
+    @media(max-width: 768px) {
+
+    }
+
+    @media(max-width: 650px) {
+        background-size: auto 200px;
+        padding: 0;
+    }
+
+    &:after, &:before {
+        content: "";
+        width: 62px;
+        height: 62px;
+        background: url("../ico/quote.svg") center center no-repeat;
+        background-size: contain;
+        opacity: .1;
+        display: block;
+        position: absolute;
+
+        @media(max-width: 992px) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media(max-width: 650px) {
+            display: none;
+        }
+    }
+
+    &:before {
+        top: 80px;
+        left: 0;
+
+        @media(max-width: 768px) {
+            top: 60px;
+        }
+    }
+
+    &:after {
+        right: 0px;
+        bottom: 39px;
+
+        @media(max-width: 992px) {
+            bottom: 0px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 28px;
+
+        @media(max-width: 768px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 27px;
+
+        @media(max-width: 768px) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}

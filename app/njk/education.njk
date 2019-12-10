@@ -2,7 +2,7 @@
 {% extends "inc/main.njk" %}
 
 {# Title #}
-{% set title = "Article" %}
+{% set title = "Education" %}
 
 {# Dop Class #}
 {# {% set htmlClass = "htmlClass" %}
@@ -10,12 +10,13 @@
 
 
 {% block content %}
-    {% set img = "img/article-page-bg.jpg" %}
-    {% set title = "<b>Our blog</b>" %}
-    {% set h3 = "TacTack’s blog and news" %}
-    
+    {% set img = "img/education-page-bg.jpg" %}
+    {% set title = "<b>Education</b>" %}
+    {% set h3 = "Intellectually enriching outdoor eco-tours for our future generation" %}
+
     {% include "header-min/header-min.njk" %}
     {% include "breadcrumbs/breadcrumbs.njk" %}
-    {% include "b-article/b-article.njk" %}
+    {% include "b-education/b-education.njk" %}
+    {% include "discount/discount.njk" %}
     {% include "footer/footer.njk" %}
 {% endblock %}

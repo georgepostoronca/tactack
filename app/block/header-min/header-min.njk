@@ -1,11 +1,11 @@
-<header class="header header--min" style="background-image: url(img/article-page-bg.jpg)">
+<header class="header header--min" style="background-image: url({{ img }})">
     {% include "menu/menu.njk" %}
 
     <div class="container">
         <div class="header__wrap">
             <div class="header-min">
-                <h1><b>Our blog</b></h1>
-                <h3>TacTack’s blog and news</h3>
+                <h1>{{ title | safe }}</h1>
+                <h3>{{ h3 }}</h3>
             </div>
         </div>
     </div>

@@ -1,0 +1,22 @@
+{# Include #}
+{% extends "inc/main.njk" %}
+
+{# Title #}
+{% set title = "Corporate" %}
+
+{# Dop Class #}
+{# {% set htmlClass = "htmlClass" %}
+{% set bodyClass = "bodyClass" %} #}
+
+
+{% block content %}
+    {% set img = "img/corporate-page-bg.jpg" %}
+    {% set title = "<b>Corporate</b>" %}
+    {% set h3 = "High-value engaging tours for the professional development and bonding of business executives" %}
+
+    {% include "header-min/header-min.njk" %}
+    {% include "breadcrumbs/breadcrumbs.njk" %}
+    {% include "b-education/b-education.njk" %}
+    {% include "discount/discount.njk" %}
+    {% include "footer/footer.njk" %}
+{% endblock %}

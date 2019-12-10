@@ -2,6 +2,7 @@
     --color-black: #060a18;
     --color-white: #ffffff;
     --color-yellow: #ffcf11;
+    --color-orange: #feb009;
     --color-blue: #0882e9;
     --color-blue-dark: #2252bc;
     --color-silver: #7f7f7f;
@@ -37,6 +38,9 @@
     --recentpost-bg: #f4f4f5;
     --recentpost-color-time: var(--color-silver);
     --recentpost-color-link: var(--color-blue-dark);
+    --infoblock-footer-color: #eceff3;
+    --infoblock-footer-accent: var(--color-orange);
+    --infoblock-footer-svg: #bdbfc2;
 }
 
 /*# sourceMappingURL=var.css.map */
