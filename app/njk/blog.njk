@@ -1,0 +1,21 @@
+{# Include #}
+{% extends "inc/main.njk" %}
+
+{# Title #}
+{% set title = "Blog" %}
+
+{# Dop Class #}
+{# {% set htmlClass = "htmlClass" %}
+{% set bodyClass = "bodyClass" %} #}
+
+
+{% block content %}
+    {% set img = "img/article-page-bg.jpg" %}
+    {% set title = "<b>Our blog</b>" %}
+    {% set h3 = "TacTack’s blog and news" %}
+    
+    {% include "header-min/header-min.njk" %}
+    {% include "breadcrumbs/breadcrumbs.njk" %}
+    {% include "b-blog/b-blog.njk" %}
+    {% include "footer/footer.njk" %}
+{% endblock %}
