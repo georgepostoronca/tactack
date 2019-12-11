@@ -1,0 +1,21 @@
+{# Include #}
+{% extends "inc/main.njk" %}
+
+{# Title #}
+{% set title = "Team" %}
+
+{# Dop Class #}
+{# {% set htmlClass = "htmlClass" %}
+{% set bodyClass = "bodyClass" %} #}
+
+
+{% block content %}
+    {% set img = "img/article-page-bg.jpg" %}
+    {% set title = "<b>Our team</b>" %}
+    {% set h3 = "TacTack Co-founders" %}
+    
+    {% include "header-min/header-min.njk" %}
+    {% include "breadcrumbs/breadcrumbs.njk" %}
+    {% include "b-team/b-team.njk" %}
+    {% include "footer/footer.njk" %}
+{% endblock %}

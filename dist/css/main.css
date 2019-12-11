@@ -1417,6 +1417,72 @@ article .label-min {
     margin-left: 13px;
 }
 
+.team__wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 37px;
+}
+
+.team__wrap h2 {
+    text-align: center;
+    margin-top: 44px;
+    margin-bottom: 62px;
+}
+
+.team__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.team__item--reverse .team__item-text {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    padding-left: 0px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+.team__item--reverse picture {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.team__item img {
+    width: 383px;
+}
+
+.team__item-text {
+    padding-left: 40px;
+}
+
+.team__item-text h4 {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.team__item-text h4 b {
+    font-weight: 900;
+}
+
+.team__item-text p {
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+
+.team__item-text p:last-of-type {
+    margin-bottom: 0px;
+}
+
 .breadcrumbs ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3047,6 +3113,25 @@ article .label-min {
         margin-bottom: 20px;
     }
 
+    .team__item img {
+        width: 300px;
+    }
+
+    .team__item-text h4 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .team__item-text p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    .team__item-text p:last-of-type {
+        margin-bottom: 0px;
+    }
+
     .footer__wrap {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3378,6 +3463,35 @@ article .label-min {
 
     .pagination {
         margin-bottom: 30px;
+    }
+
+    .team__wrap {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .team__wrap h2 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .team__item {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .team__item--reverse .team__item-text {
+        padding-right: 20px;
+    }
+
+    .team__item img {
+        width: 200px;
+    }
+
+    .team__item-text {
+        padding-left: 20px;
     }
 
     .cofounders__info h2 {
@@ -3804,6 +3918,10 @@ article .label-min {
         padding: 20px;
     }
 
+    .team__item img {
+        width: 140px;
+    }
+
     .cofounders {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3916,6 +4034,32 @@ article .label-min {
 
     .pagination__next svg {
         margin-left: 5px;
+    }
+
+    .team__item {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .team__item--reverse .team__item-text {
+        padding-right: 0px;
+        text-align: left;
+    }
+
+    .team__item img {
+        width: 260px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .team__item-text {
+        padding-left: 0px;
+    }
+
+    .team__item-text p {
+        margin-bottom: 5px;
     }
 
     .different__grid-item {
