@@ -1,0 +1,21 @@
+{# Include #}
+{% extends "inc/main.njk" %}
+
+{# Title #}
+{% set title = "Contact" %}
+
+{# Dop Class #}
+{# {% set htmlClass = "htmlClass" %}
+{% set bodyClass = "bodyClass" %} #}
+
+
+{% block content %}
+    {% set img = "img/contact-page-bg.jpg" %}
+    {% set title = "<b>Our contacts</b>" %}
+    {% set h3 = "Contact us" %}
+    
+    {% include "header-min/header-min.njk" %}
+    {% include "breadcrumbs/breadcrumbs.njk" %}
+    {% include "contact/contact.njk" %}
+    {% include "footer/footer.njk" %}
+{% endblock %}
