@@ -1,0 +1,123 @@
+.pagination {
+    margin-bottom: 72px;
+
+    @media(max-width: 768px) {
+        margin-bottom: 30px;
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+
+        @media(max-width: 480px) {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--pagination-item-border);
+        margin: 0px 4px;
+        transition: .2s;
+
+        &:hover {
+            background-color: #0882e9;
+            background-color: var(--pagination-arr-color);
+            border-color: #0882e9;
+            border-color: var(--pagination-arr-color);
+
+            a, span {
+                color: #fff;
+            }
+        }
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+        }
+
+        span {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            cursor: default;
+        }
+    }
+
+    &__prev, &__next {
+        &:hover {
+            a {
+                em {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        a {
+            display: flex;
+            align-items: center;
+            width: auto;
+            height: auto;
+            border: 0px;
+
+            svg {
+                width: 12px;
+                height: 13px;
+                fill: #0882e9;
+                fill: var(--pagination-arr-color)
+            }
+            
+            em {
+                color: #0882e9;
+                color: var(--pagination-arr-color);
+                font-size: 14px;
+                font-weight: bold;
+
+                @media(max-width: 480px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__prev {
+        margin-right: 29px;
+
+        @media(max-width: 480px) {
+            margin-right: 10px;
+        }
+
+        svg {
+            margin-right: 13px;
+
+            @media(max-width: 480px) {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__next {
+        margin-left: 29px;
+
+        @media(max-width: 480px) {
+            margin-left: 10px;
+        }
+
+        svg {
+            margin-left: 13px;
+
+            @media(max-width: 480px) {
+                margin-left: 5px;
+            }
+        }
+    }
+}

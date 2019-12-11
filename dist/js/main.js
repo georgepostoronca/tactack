@@ -16,6 +16,7 @@
 
 
 
+
 if($(".cofslid").length) {
     $(".cofslid").on('init', function (event, slick, currentSlide, nextSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
