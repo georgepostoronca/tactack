@@ -36,6 +36,9 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 
 
 
+
+
+
 if($(".cofslid").length) {
     $(".cofslid").on('init', function (event, slick, currentSlide, nextSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
