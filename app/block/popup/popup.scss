@@ -1,0 +1,54 @@
+.popup {
+    display: none;
+    width: 620px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 21px;
+    padding-bottom: 37px;
+    text-align: center;
+    background: #ffffff url("../img/popup-bg.jpg") center bottom no-repeat;
+    background-size: 100% auto;
+
+    @media(max-width: 767px) {
+        padding: 20px;
+        padding-top: 30px;
+    }
+
+    @media(max-width: 620px) {
+        width: 100%;
+    }
+
+    &__wrap {
+        > span {
+            font-size: 23px;
+            line-height: 35px;
+
+            @media(max-width: 767px) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &-thank {
+        .btn {
+            margin-top: 230px;
+
+            @media(max-width: 767px) {
+                margin-top: 100px;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 12px;
+        @media(min-width: 767px) {
+            font-size: 39px;
+        }
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -180,6 +180,43 @@
     }
 }
 
+.form-callback {
+    width: 540px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media(max-width: 580px) {
+        width: 100%;
+    }
+
+    .block-input {
+        width: calc(50% - 14px);
+        margin-bottom: 28px;
+        
+        @media(max-width: 480px) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        &--textarea {
+            width: 100%;
+        }
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button {
+        padding: 0px;
+    }
+}
+
 .block-input {
     width: 100%;
     position: relative;

@@ -2708,6 +2708,39 @@ article .label-min {
     margin-right: auto;
 }
 
+.form-callback {
+    width: 540px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.form-callback .block-input {
+    width: calc(50% - 14px);
+    margin-bottom: 28px;
+}
+
+.form-callback .block-input--textarea {
+    width: 100%;
+}
+
+.form-callback .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-callback button {
+    padding: 0px;
+}
+
 .block-input {
     width: 100%;
     position: relative;
@@ -3990,6 +4023,36 @@ article .label-min {
     transition: .2s;
 }
 
+.popup {
+    display: none;
+    width: 620px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 21px;
+    padding-bottom: 37px;
+    text-align: center;
+    background: #ffffff url("../img/popup-bg.jpg") center bottom no-repeat;
+    background-size: 100% auto;
+}
+
+.popup__wrap > span {
+    font-size: 23px;
+    line-height: 35px;
+}
+
+.popup-thank .btn {
+    margin-top: 230px;
+}
+
+.popup h2 {
+    margin-bottom: 12px;
+}
+
+.popup .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .blockquote {
     text-align: center;
     background: url("../ico/logo-silver.png") center center no-repeat;
@@ -4975,6 +5038,20 @@ article .label-min {
     .breadcrumbs {
         display: none;
     }
+
+    .popup {
+        padding: 20px;
+        padding-top: 30px;
+    }
+
+    .popup__wrap > span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .popup-thank .btn {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -5035,8 +5112,18 @@ article .label-min {
     }
 }
 
+@media (max-width: 620px) {
+    .popup {
+        width: 100%;
+    }
+}
+
 @media (max-width: 580px) {
     .formask__wrap form {
+        width: 100%;
+    }
+
+    .form-callback {
         width: 100%;
     }
 }
@@ -5247,6 +5334,11 @@ article .label-min {
         margin-bottom: 15px;
     }
 
+    .form-callback .block-input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
     .different__grid-item {
         width: 100%;
     }
@@ -5306,6 +5398,12 @@ article .label-min {
 
     .lastposts__grid .article-min:last-of-type {
         margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 767px) {
+    .popup h2 {
+        font-size: 39px;
     }
 }
 

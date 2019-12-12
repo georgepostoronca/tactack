@@ -206,6 +206,7 @@ if($(".partenter__slider").length) {
 }
 
 
+
 // SVG
 svg4everybody();
 
