@@ -87,7 +87,7 @@
                 font-size: 14px;
                 line-height: 20px;
             }
-            
+
             &:hover {
                 text-decoration: underline;
             }
@@ -111,8 +111,8 @@
 .map {
     position: relative;
     z-index: 9;
-    margin-top: -51px;
-
+    //margin-top: -51px;
+	margin-top: 40px;
     @media(max-width: 768px) {
         margin-top: 20px;
     }
@@ -161,7 +161,7 @@
             .block-input {
                 width: calc(50% - 14px);
                 margin-bottom: 28px;
-                
+
                 @media(max-width: 480px) {
                     width: 100%;
                     margin-bottom: 15px;
@@ -196,7 +196,7 @@
     .block-input {
         width: calc(50% - 14px);
         margin-bottom: 28px;
-        
+
         @media(max-width: 480px) {
             width: 100%;
             margin-bottom: 15px;
@@ -213,7 +213,7 @@
     }
 
     button {
-        padding: 0px;
+        padding: 0;
     }
 }
 
@@ -223,8 +223,11 @@
 
     &.focus {
         span, label {
-            top: -7px;
-            left: 4px;
+            //top: -7px;
+            //left: 4px;
+			//opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
         }
     }
 
@@ -245,7 +248,7 @@
         height: 54px;
         border: 1px solid #ebecef;
         border: 1px solid var(--color-silver-light);
-        outline: 0px;
+        outline: 0;
         padding-left: 20px;
         padding-right: 20px;
         transition: .2s;
@@ -254,12 +257,12 @@
         &.error {
             border-color: red;
         }
-    
+
         &.success {
             border-color: green;
         }
     }
-    
+
     textarea {
         height: 172px;
         border: 1px solid #ebecef;
@@ -276,7 +279,7 @@
         &.error {
             border-color: red;
         }
-    
+
         &.success {
             border-color: green;
         }
@@ -288,9 +291,9 @@
         left: 15px;
         letter-spacing: -0.6px;
         background-color: #fff;
-        transition: .2s;
+        //transition: .2s;
         display: inline-block;
-        padding: 0px 5px;
+        padding: 0 5px;
         cursor: pointer;
     }
 }

@@ -1,6 +1,8 @@
 .funinfo {
+    background: url("../img/funinfo-bg.jpg") center center no-repeat;
     background: var(--funinfo-bg) center center no-repeat;
     background-size: cover;
+	color: #fff;
     color: var(--funinfo-color-text);
     padding-bottom: 75px;
 

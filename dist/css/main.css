@@ -2688,7 +2688,7 @@ article .label-min {
 .map {
     position: relative;
     z-index: 9;
-    margin-top: -51px;
+    margin-top: 40px;
 }
 
 .map iframe {
@@ -2771,7 +2771,7 @@ article .label-min {
 }
 
 .form-callback button {
-    padding: 0px;
+    padding: 0;
 }
 
 .block-input {
@@ -2780,8 +2780,8 @@ article .label-min {
 }
 
 .block-input.focus span, .block-input.focus label {
-    top: -7px;
-    left: 4px;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .block-input.error input, .block-input.error textarea {
@@ -2797,7 +2797,7 @@ article .label-min {
     height: 54px;
     border: 1px solid #ebecef;
     border: 1px solid var(--color-silver-light);
-    outline: 0px;
+    outline: 0;
     padding-left: 20px;
     padding-right: 20px;
     -webkit-transition: .2s;
@@ -2844,11 +2844,8 @@ article .label-min {
     left: 15px;
     letter-spacing: -0.6px;
     background-color: #fff;
-    -webkit-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s;
     display: inline-block;
-    padding: 0px 5px;
+    padding: 0 5px;
     cursor: pointer;
 }
 
@@ -3123,8 +3120,10 @@ article .label-min {
 }
 
 .funinfo {
+    background: url("../img/funinfo-bg.jpg") center center no-repeat;
     background: var(--funinfo-bg) center center no-repeat;
     background-size: cover;
+    color: #fff;
     color: var(--funinfo-color-text);
     padding-bottom: 75px;
 }
@@ -3241,6 +3240,7 @@ article .label-min {
 
 .header {
     min-height: 100vh;
+    color: #0882e9;
     background-color: var(--color-blue, #0882e9);
 }
 
@@ -3252,6 +3252,7 @@ article .label-min {
 
 .header--min .header__wrap {
     padding-top: 122px;
+    color: #fff;
     color: var(--color-white);
 }
 
@@ -3613,6 +3614,7 @@ article .label-min {
 }
 
 .mainsection {
+    background: url("../img/mainsection-bg.jpg") center 207px;
     background: var(--mainsection-bg) center 207px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -3732,6 +3734,7 @@ article .label-min {
     position: relative;
     z-index: 1;
     display: block;
+    color: #fff;
     color: var(--mainsection-iitem-text-color);
     font-size: 17px;
     font-weight: 900;
@@ -3742,6 +3745,7 @@ article .label-min {
 .experience__grid-item p {
     position: relative;
     z-index: 1;
+    color: #fff;
     color: var(--mainsection-iitem-text-color);
     font-size: 16px;
     font-weight: 200;
@@ -3803,6 +3807,7 @@ article .label-min {
 
 .menu__nav ul li a {
     text-transform: uppercase;
+    color: #fff;
     color: var(--color-white);
     font-size: 12px;
     font-weight: bold;
@@ -3820,6 +3825,7 @@ article .label-min {
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
+    background-color: #0882e9;
     background-color: var(--color-blue);
     position: absolute;
     left: 0px;
@@ -3866,6 +3872,7 @@ article .label-min {
     display: block;
     position: absolute;
     left: 0;
+    background-color: #fff;
     background-color: var(--color-white);
     width: 100%;
     height: 3px;
@@ -4854,6 +4861,7 @@ article .label-min {
         width: 200px;
         top: 30px;
         right: 0px;
+        background-color: #fff;
         background-color: var(--color-white);
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -4900,6 +4908,7 @@ article .label-min {
         height: 0;
         border-style: solid;
         border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #fff transparent;
         border-color: transparent transparent var(--color-white) transparent;
         -webkit-transition: .2s;
         -o-transition: .2s;
@@ -4927,6 +4936,7 @@ article .label-min {
     }
 
     .menu__nav ul li a {
+        color: #060a18;
         color: var(--color-black);
         font-size: 14px;
     }

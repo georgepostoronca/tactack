@@ -1,6 +1,6 @@
 module.exports = function (gulp, plugins, plg, postcss) {
     return function () {
-        gulp.src('app/scss/*.scss')
+        gulp.src(['app/scss/main.scss', 'app/scss/var.scss'])
         .pipe(plugins.plumber())
         .pipe(plugins.using({ prefix: 'After changed:', color:'blue', filesize:true }))
         .pipe(plugins.sourcemaps.init())

@@ -66,6 +66,57 @@ function getTaskSet(task, plg) {
 }
 
 
+
+// CSS Var
+// gulp.task("cssvar", function() {
+// 	return function () {
+//         gulp.src('app/scss/main.ie.scss')
+//         .pipe(plugins.plumber())
+//         .pipe(plugins.using({ prefix: 'After changed:', color:'blue', filesize:true }))
+
+//         // SCSS
+//         .pipe(plugins.sass({
+//             outputStyle: 'expanded',
+//             sourceMap: true,
+//             errLogToConsole: true,
+//         }).on('error', function(err) {
+//             plugins.notify().write(err);
+//             this.emit('end');
+//         }))
+
+//         // PostCss
+//         .pipe(postcss([
+// 			will_change,
+// 			unprefix(),
+// 			cssnext(),
+// 			mqpacker({
+// 				sort: sortCSSmq.desktopFirst
+// 			}),
+// 			lost(),
+// 			color_rgba_fallback,
+// 			opacity,
+// 			pseudoelements,
+// 			vmin,
+// 			pixrem,
+// 			atImport(),
+// 			zindex(),
+// 			sorting()
+// 		]))
+
+//         // AutoPrefixer
+//         .pipe(plugins.autoprefixer({
+//             browsers: ['last 5 versions', 'ie >= 11'],
+//             cascade: false
+//         }))
+
+//         .pipe(plugins.cssbeautify())
+//         .pipe(plugins.stripCssComments())
+//         .pipe(gulp.dest('./dist/css/'))
+//         .pipe(plugins.notify({ message: 'CSS Var task complete', onLast: true }))
+//     };
+// });
+
+
 // ==============================
 // Generate ListPage
 // ==============================
@@ -178,6 +229,9 @@ gulp.task('browserSync', getTaskSet('browserSync.js'));
 gulp.task('watcher', function () {
 	gulp.watch(['app/njk/**/*.njk', 'app/block/**/*.njk'], ['njk']);
 	gulp.watch(['app/scss/**/*.scss', 'app/block/**/*.scss'], ['css']);
+
+	// gulp.watch(['app/scss/setings/_var.scss'], ['cssvar']);
+	
 	gulp.watch(['app/js/**/*.js', 'app/block/**/*.js'], ['js']);
 	gulp.watch('app/src/*.html', ['htmlValidate']);
 

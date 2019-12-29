@@ -67,6 +67,7 @@
                 width: 200px;
                 top: 30px;
                 right: 0px;
+				background-color: #fff;
                 background-color: var(--color-white);
                 flex-direction: column;
                 border-radius: 2px;
@@ -99,6 +100,7 @@
                     height: 0;
                     border-style: solid;
                     border-width: 0 10px 10px 10px;
+					border-color: transparent transparent #fff transparent;
                     border-color: transparent transparent var(--color-white) transparent;
                     transition: .2s;
 
@@ -139,6 +141,7 @@
 
                 a {
                     text-transform: uppercase;
+					color: #fff;
                     color: var(--color-white);
                     font-size: 12px;
                     font-weight: bold;
@@ -155,6 +158,7 @@
                     }
 
                     @media(max-width: 768px) {
+						color: #060a18;
                         color: var(--color-black);
                         font-size: 14px;
                     }
@@ -165,6 +169,7 @@
                         width: 0px;
                         height: 3px;
                         transition: .2s;
+						background-color: #0882e9;
                         background-color: var(--color-blue);
                         position: absolute;
                         left: 0px;
@@ -215,6 +220,7 @@
             display: block;
             position: absolute;
             left: 0;
+			background-color: #fff;
             background-color: var(--color-white);
             width: 100%;
             height: 3px;

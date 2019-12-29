@@ -1,4 +1,5 @@
 .mainsection {
+	background: url("../img/mainsection-bg.jpg")  center 207px;
     background: var(--mainsection-bg) center 207px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -155,7 +156,7 @@
                 top: 0px;
                 left: 0px;
                 z-index: 0;
-                
+
                 @supports (object-fit: cover) {
                     height: 100%;
                     object-fit: cover;
@@ -168,6 +169,7 @@
                 position: relative;
                 z-index: 1;
                 display: block;
+				color: #fff;
                 color: var(--mainsection-iitem-text-color);
 
                 font-size: 17px;
@@ -175,10 +177,11 @@
                 margin-bottom: 5px;
                 text-transform: uppercase;
             }
-            
+
             p {
                 position: relative;
                 z-index: 1;
+				color: #fff;
                 color: var(--mainsection-iitem-text-color);
                 font-size: 16px;
                 font-weight: 200;
